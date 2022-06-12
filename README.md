@@ -14,7 +14,7 @@ Mandelbrot-UnityApp features an exhaustive suite of tools that assist the user i
  - L: Rotate Left
  - R: Rotate Right
 
-Using the `Lerp` function in Unity, we have successfully made a smooth navigation experience of the fractal. E.g.
+Using the `Lerp` function in Unity, we have successfully made a smooth navigation experience of the fractal. This is accomplished via the use of:
 
 ```cs
  smoothPos = Vector2.Lerp(smoothPos, pos, .03f); // Movement
