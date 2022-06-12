@@ -34,3 +34,11 @@ Using the `Lerp` function in Unity, we have successfully made a smooth navigatio
  mat.SetVector("_Area", new Vector4(smoothPos.x, smoothPos.y, scaleX, scaleY));
  mat.SetFloat("_Angle", smoothAngle);
 ```
+
+## Screenshots
+
+<img align="center" src="https://github.com/JackGannonUK/Mandelbrot-UnityApp/blob/main/assets/topview.png">
+<img align="center" src="https://github.com/JackGannonUK/Mandelbrot-UnityApp/blob/main/assets/repeats.png">
+<img align="center" src="https://github.com/JackGannonUK/Mandelbrot-UnityApp/blob/main/assets/outside.png">
+<img align="center" src="https://github.com/JackGannonUK/Mandelbrot-UnityApp/blob/main/assets/branch.png">
+
