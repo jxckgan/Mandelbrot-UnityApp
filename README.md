@@ -2,11 +2,11 @@
 
 <img align="right" width="300" height="300" src="https://github.com/JackGannonUK/Mandelbrot-UnityApp/blob/main/assets/mlogo.png">
 
-## About
-Mandelbrot-UnityApp is an application built in Unity - utilizing basic shadertoy scripts. Meaning it is swift, minimal and efficient. The only C# programming used is the camera controller; these scripts feature explanatory comments - making them comprehensible for neophytes / those who want to comprehend the inner mechanisms of the program. Mandelbrot-UnityApp features a slick camera controller, allowing you to glide deep within the Mandelbrot Set - exposing its innate beauty.
+### About
+Mandelbrot-UnityApp is an application built in Unity which utilises basic shadertoy scripts. Mandelbrot-UnityApp features a camera controller, allowing you to glide within the Mandelbrot Set.
 
-## Controls
-Mandelbrot-UnityApp features an exhaustive suite of tools that assist the user in navigating the Fractal.
+### Controls
+Below are the controls for navigating through the program:
 
  - W, A, S, D: Up, Down, Left, Right
  - I: Zoom In
@@ -14,7 +14,7 @@ Mandelbrot-UnityApp features an exhaustive suite of tools that assist the user i
  - L: Rotate Left
  - R: Rotate Right
 
-Through the use of the `Lerp` function in Unity, it successfully creates a smooth navigation experience of the fractal. This is accomplished via the use of:
+Through the use of the `Lerp` function in Unity, we have a nice, smooth, navigation experience of the fractal. This is accomplished with the use of:
 
 ```cs
  smoothPos = Vector2.Lerp(smoothPos, pos, .03f); // Movement
@@ -34,6 +34,10 @@ Through the use of the `Lerp` function in Unity, it successfully creates a smoot
  mat.SetVector("_Area", new Vector4(smoothPos.x, smoothPos.y, scaleX, scaleY));
  mat.SetFloat("_Angle", smoothAngle);
 ```
+
+### Known Issues
+
+Zooming is limited, after a certain range the fractal will begin to pixelate and you won't be able to zoom in further.
 
 ## Screenshots
 
